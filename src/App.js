@@ -1,27 +1,18 @@
-import "./App.css";
-import { BrowserRouter, Routes, Route }
-	from "react-router-dom";
-import SignIn from "./Screens/Signin";
-import SignUp from "./Screens/Signup";
-import ChatHome from "./Screens/ChatHome";
-
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-return (
-	<div className="App">
-	<BrowserRouter>
-		<Routes>
-		<Route exact path="/"
-			element={<SignIn />} />
-		<Route path="/Signup"
-			element={<SignUp />} />
-		<Route path="/chat-home/:receiverId"
-			element={<ChatHome />} />
-		</Routes>
-	</BrowserRouter>
-	</div>
-);
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+         Welcome to <code>Abdessattar Elyagoubi </code>Website.
+        </p>
+        
+      </header>
+    </div>
+  );
 }
 
 export default App;
-
